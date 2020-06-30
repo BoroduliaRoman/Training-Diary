@@ -2,20 +2,35 @@
  * Created by BR 30.06.2020
  */
 public class TrainingDiary {
-    float[] date = {30.06F};
-    String[] exercise = {"Bars"};
-    int[] numberOfRepetitions = {32};
-    int[] averageHeartRate = {98};
-    float[] trainingTime = {17F};
-
     public static void main(String[] args) {
-        TrainingDiary day1 = new TrainingDiary();
+        DaysOfTRaining day1 = new DaysOfTRaining();
+        day1.setInfo(29.06F, "Pull-ups", 18, 98, 12.0F);
         day1.generalTrainingInformation();
+
+        DaysOfTRaining day2 = new DaysOfTRaining();
+        day2.setInfo(30.06F, "Bars", 32, 98, 17.0F);
+        day2.generalTrainingInformation();
+    }
+}
+
+class DaysOfTRaining {
+    private float date;
+    private String exercise;
+    private int numberOfRepetitions;
+    private int averageHeartRate;
+    private float trainingTime ;
+
+    void setInfo(float date, String exercise, int numberOfRepetitions, int averageHeartRate, float trainingTime) {
+        this.date = date;
+        this.exercise = exercise;
+        this.numberOfRepetitions = numberOfRepetitions;
+        this.averageHeartRate = averageHeartRate;
+        this.trainingTime = trainingTime;
     }
 
-    public void generalTrainingInformation() {
-        System.out.println("Date: " + date[0] + ", Exercise: " + exercise[0] + ", Number of repetitions: " +
-                numberOfRepetitions[0] + ", Average Heart Rate :" + averageHeartRate[0] + ", Training time: "
-                + trainingTime[0] + "m!");
+    void generalTrainingInformation() {
+        System.out.println("Date: " + date + "| Exercise: " + exercise + "| Number of repetitions: " +
+                numberOfRepetitions + "| Average Heart Rate: " + averageHeartRate + "| Training time: "
+                + trainingTime + "m!\n");
     }
 }
