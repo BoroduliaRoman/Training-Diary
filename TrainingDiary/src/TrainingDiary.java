@@ -5,6 +5,9 @@
  */
 public class TrainingDiary {
     public static void main(String[] args) {
+        DaysOfTRaining.description = "Keep track of your workouts every day";
+        DaysOfTRaining.getDescription();
+
         DaysOfTRaining day1 = new DaysOfTRaining();
         day1.setDate(29.06F);
         day1.setExercise("Pull-ups");
@@ -28,15 +31,41 @@ public class TrainingDiary {
         day3.setAverageHeartRate(106);
         day3.setTrainingTime(25.17F);
         day3.getGeneralTrainingInformation();
+
+        DaysOfTRaining day4 = new DaysOfTRaining();
+        day4.setDate(02.07F);
+        day4.setExercise("Pull-ups");
+        day4.setNumberOfRepetitions(19);
+        day4.setAverageHeartRate(98);
+        day4.setTrainingTime(12.29F);
+        day4.getGeneralTrainingInformation();
+
+        DaysOfTRaining day5 = new DaysOfTRaining();
+        day5.setDate(03.07F);
+        day5.setExercise("Bars");
+        day5.setNumberOfRepetitions(39);
+        day5.setAverageHeartRate(105);
+        day5.setTrainingTime(18.40F);
+        day5.getGeneralTrainingInformation();
     }
 }
 
 class DaysOfTRaining {
+
+    public static String description;
+    private static int numberOfTraining;
+
     private float date;
     private String exercise;
     private int numberOfRepetitions;
     private int averageHeartRate;
-    private float trainingTime ;
+    private float trainingTime;
+
+
+    public DaysOfTRaining() {
+        this.exercise = "Lead the name of the exercise";
+        numberOfTraining++;
+    }
 
     public float getDate() {
         return date;
@@ -106,6 +135,10 @@ class DaysOfTRaining {
     public void getGeneralTrainingInformation() {
         System.out.println("Date: " + date + "| Exercise: " + exercise + "| Number of repetitions: " +
                 numberOfRepetitions + "| Average Heart Rate: " + averageHeartRate + "| Training time: "
-                + trainingTime + "m!\n");
+                + trainingTime + "m! | Workout day " + numberOfTraining);
+    }
+
+    public static void getDescription() {
+        System.out.println(description + "\n");
     }
 }
