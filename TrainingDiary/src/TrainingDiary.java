@@ -54,6 +54,7 @@ class DaysOfTRaining {
 
     public static String description;
     private static int numberOfTraining;
+    public static String MOTIVATION = "No pain no gain";
 
     private float date;
     private String exercise;
@@ -135,7 +136,7 @@ class DaysOfTRaining {
     public void getGeneralTrainingInformation() {
         System.out.println("Date: " + date + "| Exercise: " + exercise + "| Number of repetitions: " +
                 numberOfRepetitions + "| Average Heart Rate: " + averageHeartRate + "| Training time: "
-                + trainingTime + "m! | Workout day " + numberOfTraining);
+                + trainingTime + "m! | Workout day " + numberOfTraining + " | " + MOTIVATION);
     }
 
     public static void getDescription() {
