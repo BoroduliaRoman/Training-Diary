@@ -19,6 +19,7 @@ public class TrainingDiary {
 
         DaysOfTRaining day2 = new DaysOfTRaining();
         //day2.setInfo(30.06F, "Bars", 32, 98, 17.0F);
+        day2.gti();
 
         day2.setDate(30.06F);
         day2.setExercise("Bars");
@@ -37,6 +38,10 @@ class DaysOfTRaining {
     private int numberOfRepetitions;
     private int averageHeartRate;
     private float trainingTime ;
+
+    public void gti() {
+        System.out.printf("Date %f", date);
+    }
 
     public float getDate() {
         return date;
