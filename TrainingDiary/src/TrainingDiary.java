@@ -67,10 +67,27 @@ public class TrainingDiary {
         day8.setAverageHeartRate(105);
         day8.setTrainingTime(24.34F);
         day8.getGeneralTrainingInformation();
+
+        DaysOfTRaining day9 = new DaysOfTRaining();
+        day9.setDate(07.07F);
+        day9.setExercise(pullUps.getName());
+        day9.setNumberOfRepetitions(20);
+        day9.setAverageHeartRate(98);
+        day9.setTrainingTime(12.08F);
+        day9.getGeneralTrainingInformation();
+
+        DaysOfTRaining day10 = new DaysOfTRaining();
+        day10.setDate(08.07F);
+        day10.setExercise(bars.getName());
+        day10.setNumberOfRepetitions(41);
+        day10.setAverageHeartRate(105);
+        day10.setTrainingTime(18.41F);
+        day10.getGeneralTrainingInformation();
+        day10.showInfo();
     }
 }
 
-class DaysOfTRaining {
+class DaysOfTRaining implements Info {
 
     public static String description;
     private static int numberOfTraining;
@@ -166,5 +183,9 @@ class DaysOfTRaining {
 
     public void rest() {
         System.out.printf("Date: %.2f | Day of rest \n", date);
+    }
+
+    public void showInfo() {
+        System.out.println(date);
     }
 }

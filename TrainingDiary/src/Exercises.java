@@ -1,8 +1,12 @@
 /**
  * Created by BR 06.07.2020
  */
-public class Exercises {
+public class Exercises implements Info{
     String name = "Exercise name";
+
+    public void showInfo() {
+        System.out.println(name);
+    }
 }
 
 class PullUps extends Exercises{
