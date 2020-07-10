@@ -6,7 +6,7 @@ import java.util.GregorianCalendar;
 class DaysOfTRaining {
 
     public static String description;
-    private static int numberOfTraining;
+    private int numberOfTraining;
     public static String MOTIVATION = "No pain no gain";
 
     private float date;
@@ -50,11 +50,7 @@ class DaysOfTRaining {
     }
 
     public void setNumberOfRepetitions(int numberOfRepetitions) {
-        if (numberOfRepetitions < 10) {
-            System.out.println("You are weak today, sleep longer" + numberOfRepetitions);
-        } else {
-            this.numberOfRepetitions = numberOfRepetitions;
-        }
+        this.numberOfRepetitions = numberOfRepetitions;
     }
 
     public int getAverageHeartRate() {

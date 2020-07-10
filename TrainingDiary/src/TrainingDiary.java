@@ -1,4 +1,3 @@
-import java.util.GregorianCalendar;
 
 /**
  * Created by BR 30.06.2020
@@ -6,7 +5,6 @@ import java.util.GregorianCalendar;
  * 01.07 - Created getters and setters for all fields of the class DaysOfTRaining
  */
 public class TrainingDiary {
-
     public static void main(String[] args) {
 
         DaysOfTRaining.description = "Keep track of your workouts every day";
@@ -83,5 +81,19 @@ public class TrainingDiary {
         day10.setAverageHeartRate(105);
         day10.setTrainingTime(18.41F);
         day10.getGeneralTrainingInformation();
+
+        DaysOfTRaining day11 = new DaysOfTRaining();
+        day11.setDate(09.07F);
+        day11.setExercise("Boxing");
+        day11.setNumberOfRepetitions(1);
+        day11.setTrainingTime(50F);
+        day11.getGeneralTrainingInformation();
+
+        DaysOfTRaining day12 = new DaysOfTRaining();
+        day12.setDate(10.07F);
+        day12.setExercise("Boxing");
+        day12.setNumberOfRepetitions(1);
+        day12.setTrainingTime(50F);
+        day12.getGeneralTrainingInformation();
     }
 }
