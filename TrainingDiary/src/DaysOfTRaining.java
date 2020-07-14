@@ -100,4 +100,8 @@ class DaysOfTRaining {
     public void showInfo() {
         System.out.println(date);
     }
+
+    public void therapy() {
+        System.out.printf("Date: %.2f | Therapy day \n", date);
+    }
 }

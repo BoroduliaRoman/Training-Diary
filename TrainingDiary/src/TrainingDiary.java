@@ -95,5 +95,24 @@ public class TrainingDiary {
         day12.setNumberOfRepetitions(1);
         day12.setTrainingTime(50F);
         day12.getGeneralTrainingInformation();
+
+        DaysOfTRaining day13 = new DaysOfTRaining();
+        day13.setDate(11.07F);
+        day13.rest();
+
+        DaysOfTRaining day14 = new DaysOfTRaining();
+        day14.setDate(12.07F);
+        day14.rest();
+
+        DaysOfTRaining day15 = new DaysOfTRaining();
+        day15.setDate(13.07F);
+        day15.setExercise("Boxing");
+        day15.setNumberOfRepetitions(1);
+        day15.setTrainingTime(50F);
+        day15.getGeneralTrainingInformation();
+
+        DaysOfTRaining day16 = new DaysOfTRaining();
+        day16.setDate(14.07F);
+        day16.therapy();
     }
 }
