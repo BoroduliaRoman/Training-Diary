@@ -114,5 +114,9 @@ public class TrainingDiary {
         DaysOfTRaining day16 = new DaysOfTRaining();
         day16.setDate(14.07F);
         day16.therapy();
+
+        DaysOfTRaining day17 = new DaysOfTRaining();
+        day17.setDate(15.07F);
+        day17.therapy();
     }
 }
