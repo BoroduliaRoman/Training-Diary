@@ -6,7 +6,7 @@
  */
 public class TrainingDiary {
     public static void main(String[] args) {
-
+        
         DaysOfTRaining.description = "Keep track of your workouts every day";
         DaysOfTRaining.getDescription();
 
@@ -118,5 +118,13 @@ public class TrainingDiary {
         DaysOfTRaining day17 = new DaysOfTRaining();
         day17.setDate(15.07F);
         day17.therapy();
+
+        DaysOfTRaining day18 = new DaysOfTRaining();
+        day18.setDate(16.07F);
+        day18.therapy();
+
+        DaysOfTRaining day19 = new DaysOfTRaining();
+        day19.setDate(17.07F);
+        day19.therapy();
     }
 }
